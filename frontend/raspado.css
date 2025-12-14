@@ -1,0 +1,34 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: #222;
+  color: white;
+}
+
+#container {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+canvas {
+  border-radius: 12px;
+  cursor: crosshair;
+  display: block;
+}
+
+#baseCanvas {
+  z-index: 0;
+  position: relative;
+}
+
+#overlayCanvas {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

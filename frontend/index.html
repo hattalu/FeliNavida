@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Feliz Navidad</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Calendario de Adviento</h1>
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <p>Nombre:</p>
+      <input id="nameInput" />
+      <button id="loginBtn">Entrar</button>
+    </div>
+  </div>
+
+  <div id="main" style="display:none;">
+    <p id="welcome"></p>
+    <div id="status">
+      <span>Tiradas disponibles: </span>
+      <span id="chancesCount">0</span>
+    </div>
+    <div id="slotMachine">
+      <div class="reel" id="reel1"><div class="reel-inner"></div></div>
+      <div class="reel" id="reel2"><div class="reel-inner"></div></div>
+      <div class="reel" id="reel3"><div class="reel-inner"></div></div>
+    </div>
+    <button id="spinBtn">Tirar</button>
+    <button id="taskBtn">Completar tarea (+1 tirada)</button>
+    <p id="result"></p>
+  </div>
+
+  <div id="taskModal" class="modal1">
+  <div class="modal-content1">
+    <h2>Obten más tiradas</h2>
+    <ul id="taskList" style="list-style-type:none;">
+      <li>Me bañé <button class="task-btn">+1 tirada</button></li>
+      <li>No jugué lol <button class="task-btn">+1 tirada</button></li>
+      <li>Bebí agua <button class="task-btn">+1 tirada</button></li>
+    </ul>
+    <p id="taskMessage"></p>
+    <button id="closeTaskModal">Cerrar</button>
+  </div>
+</div>
+
+  <div id="jokeModal" class="modal1">
+    <div class="modal-content1">
+      <p id="jokeText"></p>
+      <button id="closeJokeModal">Cerrar</button>
+    </div>
+  </div>
+
+  <canvas id="snowCanvas"></canvas>
+  <script src="main.js"></script>
+  <script src="snow.js"></script>
+
+</body>
+</html>
